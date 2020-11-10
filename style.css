@@ -1,45 +1,53 @@
-.container-fluid{
+body {
+    background-color: #8A735CCF;
+}
+
+#menuArea {
     /* background-image: url("SANDWICH SALAD.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 60%; */
-
     /* Going to use this to test the words first */
     background-color: #00DBDE;
     background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-
 }
 
-.list-group-item{
+.list-group-item {
     background-color: rgba(255, 255, 255, 0);
     border: none;
 }
 
-.card{
+.card {
     border: none;
 }
 
-h2{
+h2 {
     color: white;
     font-size: 40px;
     text-shadow: 2px 5px 1px black;
 }
 
-h3{
+h3 {
     color: white;
     text-shadow: 2px 5px 1px black;
     /* font-size: 22px;  use media for 425px*/
 }
-p{
+
+p {
     color: white;
     text-shadow: 2px 3px 2px black;
 }
 
-#leftSide{
+#leftSide {
     background-color: rgba(255, 255, 255, 0);
 }
 
-#rightSide{
+#rightSide {
     background-color: rgba(255, 255, 255, 0);
+}
+
+.goldColor {
+    color: #996E0B;
+    text-shadow: none;
 }
