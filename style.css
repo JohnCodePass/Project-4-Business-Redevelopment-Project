@@ -108,6 +108,12 @@ p {
     object-fit: cover;
 }
 
+.modalImg{
+    width: 600px; /* width of container */
+    height: 600px; /* height of container */
+    object-fit: cover;
+}
+
 
 .expTop{
     width: 400px; /* width of container */
