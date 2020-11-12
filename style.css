@@ -101,3 +101,23 @@ p {
 .carousel-item-prev{
     display:block;
 }
+
+.aboutImgs{
+    width: 290px; /* width of container */
+    height: 250px; /* height of container */
+    object-fit: cover;
+}
+
+
+.expTop{
+    width: 400px; /* width of container */
+    height: 350px; /* height of container */
+    object-fit: cover;
+}
+
+.testTea{
+    width: 290px; /* width of container */
+    height: 281px; /* height of container */
+    object-fit: cover;
+}
+
