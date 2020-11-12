@@ -103,8 +103,8 @@ p {
 }
 
 .aboutImgs{
-    width: 290px; /* width of container */
-    height: 250px; /* height of container */
+    width: 300px; /* width of container */
+    height: 270px; /* height of container */
     object-fit: cover;
 }
 
@@ -115,9 +115,20 @@ p {
     object-fit: cover;
 }
 
-.testTea{
-    width: 290px; /* width of container */
-    height: 281px; /* height of container */
+.expMid{
+    width: 270px; /* width of container */
+    height: 350px; /* height of container */
     object-fit: cover;
 }
 
+.exp2Bot{
+    width: 410px; /* width of container */
+    height: 217px; /* height of container */
+    object-fit: cover;
+}
+
+.exp1Bot{
+    width: 550px; /* width of container */
+    height: 217px; /* height of container */
+    object-fit: cover;
+}
