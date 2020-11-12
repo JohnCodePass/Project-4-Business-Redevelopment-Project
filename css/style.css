@@ -1,10 +1,8 @@
 body {
     font-family: NotoSansRegular;
-    background-color:#8A735CCF;
-    
+    background-color: #8A735CCF;
 }
 
- 
 /*----Font------*/
 
 /* @font-face {
@@ -111,9 +109,7 @@ body {
 /*-----Middle Navigation------*/
 
 .middleNav, .copyRight {
-    background-color:#cabcae5b;
-  
-    
+    background-color: #cabcae5b;
 }
 
 .storeLogoText {
@@ -163,6 +159,7 @@ a:hover {
     font-family: 'Dancing Script', cursive;
     color: white;
     font-size: 60px;
+    text-shadow: 4px 7px 4px black;
 }
 
 .placeOrderBtn {
@@ -171,6 +168,7 @@ a:hover {
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
+    text-shadow: 2px 5px 2px black;
 }
 
 .placeOrderBtn:hover {
@@ -178,13 +176,9 @@ a:hover {
     background-color: rgb(223, 166, 62);
 }
 
-
-
-
-
-
 /*--------copyRight---------*/
-.copyRight{
+
+.copyRight {
     color: #513928;
     font-family: 'Noto Sans', sans-serif;
 }
