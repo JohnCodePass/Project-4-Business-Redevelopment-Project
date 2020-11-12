@@ -1,6 +1,5 @@
 body {
-    /* background-color: #8A735CCF; */
-    background-color: black;
+    background-color: #8A735CCF;
 }
 
 #menuArea {
@@ -114,6 +113,11 @@ p {
     object-fit: cover;
 }
 
+.modalSide{
+    width: 700px; /* width of container */
+    height: 350px; /* height of container */
+    
+}
 
 .expTop{
     width: 400px; /* width of container */
