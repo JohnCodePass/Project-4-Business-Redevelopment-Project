@@ -5,7 +5,7 @@ body {
 
 /*----Font------*/
 
-@font-face {
+/* @font-face {
     font-family: NotoSansRegular;
     src: url(../font/NotoSans-Regular.ttf);
     font-weight: regular;
@@ -47,14 +47,14 @@ body {
     font-family: DancingMedium;
     src: url(../font/DancingScript-Medium.ttf);
     
-}
+} */
 
 /*------------------Top--------------------*/
 
 .topRow {
     background-color: #8A735CCF;
     padding: 1%;
-    font-family: NotoSansRegular;
+   
 }
 
 .phoneIcon {
@@ -71,7 +71,7 @@ body {
 
 .locationIcon {
     color: rgba(255, 255, 255, 0.836);
-    padding: 0.4%;
+    padding: 0.3%;
 }
 
 .mapText {
@@ -81,10 +81,11 @@ body {
 
 .topText {
     display: inline;
-    padding-left: 12%;
+    padding-left: 20%;
     color: rgba(255, 255, 255, 0.822);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+    
 }
 
 .yelpImg {
@@ -114,7 +115,7 @@ body {
 .storeLogoText{
     color: #513928;
     font-weight: bolder;
-    font-style: oblique;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 37px;
 }
 .navbar-text{
@@ -122,6 +123,7 @@ body {
       padding-right: 10px;  
       display: inline;
       font-weight: bolder;
+      font-family: 'Noto Sans', sans-serif;
 }
 
 a:link {
@@ -152,7 +154,18 @@ a:hover {
 }
 
 .subtext-header{
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 60px;
 }
-
-
+.placeOrderBtn{
+    color: white;
+    border-color: white;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+btn:hover {
+    color: rgb(223, 166, 62);
+    font-weight: bolder;
+  }
