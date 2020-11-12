@@ -1,8 +1,10 @@
 body {
     font-family: NotoSansRegular;
-    background-color: #8A735CCF;
+    background-color:#8A735CCF;
+    
 }
 
+ 
 /*----Font------*/
 
 /* @font-face {
@@ -108,9 +110,10 @@ body {
 
 /*-----Middle Navigation------*/
 
-.middleNav {
-    background-color: #9e8f7f31;
-    padding-left: 4%;
+.middleNav, .copyRight {
+    background-color:#cabcae5b;
+  
+    
 }
 
 .storeLogoText {
