@@ -153,6 +153,8 @@ a:hover {
 .heartLogo {
     color: white;
     font-size: 100px;
+  
+    
 }
 
 .subtext-header {
@@ -160,6 +162,19 @@ a:hover {
     color: white;
     font-size: 60px;
     text-shadow: 4px 7px 4px black;
+    animation-name: slide;
+    animation-duration: 2s;
+  
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .placeOrderBtn {
@@ -169,11 +184,53 @@ a:hover {
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
     text-shadow: 2px 5px 2px black;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
 }
-
-.placeOrderBtn:hover {
+.btn{
+    color: white;
+    font-weight: bold;
+    border: 2px sold #634832;
+    font-size: 25px;
+}
+/* .placeOrderBtn:hover {
     font-weight: bolder;
     background-color: rgb(223, 166, 62);
+} */
+.hvr-right{
+    display: inline-block;
+    vertical-align: middle;
+    transition-duration: 0.05s;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(223, 166, 62);
+    position: relative;
+    transition-property: color;
+}
+.hvr-right:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(223, 166, 62);
+    transition-timing-function: ease-out;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.hvr-right:hover, .hvr-right:focus, 
+.hvr-right:active{
+    color:white;
+}
+.hvr-right:hover:before, .hvr-right:focus:before, 
+.hvr-right:active:before{
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transform: scaleX(1);
 }
 
 /*--------copyRight---------*/
@@ -182,3 +239,4 @@ a:hover {
     color: #513928;
     font-family: 'Noto Sans', sans-serif;
 }
+
