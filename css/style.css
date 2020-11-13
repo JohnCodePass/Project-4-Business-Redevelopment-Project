@@ -11,31 +11,85 @@ body {
 
 } */
 
-
-#menuArea::after {
-    content:'';
-    background: url("../images/SANDWICH\ SALAD.jpg") no-repeat center center;
-
+@media only screen and (max-width: 6000px) {
+    #menuArea::after {
+        content:'';
+        background: url("../images/SANDWICH\ SALAD.jpg") no-repeat center center;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
     
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-    background-size: 100% 100%;
-    background-size: cover;
-    object-fit: cover;
+        background-size: 100% 100%;
+        background-size: cover;
+        object-fit: cover;
+        
+        /* Standard is height of 1646px */
+        width:100%;
+        height:1646px;
     
-    /* Standard is height of 1646px */
-    width:100%;
-    height:1646px;
+        /*At 1105 px height; increase the img height to 1670px  */
+        /*At 991 px height img goes to tablet, increase height to 3027px  */
+    
+        /* In below the 991px picture is pull too much barely visable */
+    
+        z-index:-1;
+        opacity:50%;
+    }
+}
 
-    /*At 1105 px height; increase the img height to 1670px  */
-    /*At 991 px height img goes to tablet, increase height to 3027px  */
+@media only screen and (max-width: 1105px){
+    #menuArea::after {
+        content:'';
+        background: url("../images/SANDWICH\ SALAD.jpg") no-repeat center center;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    
+        background-size: 100% 100%;
+        background-size: cover;
+        object-fit: cover;
+        
+        /* Standard is height of 1646px */
+        width:100%;
+        height:1670px;
+    
+        /*At 1105 px height; increase the img height to 1670px  */
+        /*At 991 px height img goes to tablet, increase height to 3027px  */
+    
+        /* In below the 991px picture is pull too much barely visable */
+    
+        z-index:-1;
+        opacity:50%;
+    }
+}
 
-    /* In below the 991px picture is pull too much barely visable */
-
-    z-index:-1;
-    opacity:50%;
+@media only screen and (max-width: 991px){
+    #menuArea::after {
+        content:'';
+        background: url("../images/SANDWICH\ SALAD.jpg") no-repeat center center;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    
+        background-size: 100% 100%;
+        background-size: cover;
+        object-fit: cover;
+        
+        /* Standard is height of 1646px */
+        width:100%;
+        height:3027px;
+    
+        /*At 1105 px height; increase the img height to 1670px  */
+        /*At 991 px height img goes to tablet, increase height to 3027px  */
+    
+        /* In below the 991px picture is pull too much barely visable */
+    
+        z-index:-1;
+        opacity:50%;
+    }
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -122,13 +176,6 @@ p {
         display: flex !important;
         justify-content: center !important;
     }
-    /* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    } */
 }
 
 @media only screen and (max-width: 575px){
