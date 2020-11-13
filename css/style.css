@@ -3,51 +3,6 @@ body {
     background-color: #8A735CCF;
 }
 
-/*----Font------*/
-
-/* @font-face {
-    font-family: NotoSansRegular;
-    src: url(../font/NotoSans-Regular.ttf);
-    font-weight: regular;
-}
-
-@font-face {
-    font-family: NotoSansBold;
-    src: url(../font/NotoSans-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: NotoSansItalic;
-    src: url(../font/NotoSans-Italic.ttf);
-    font-weight: italic;
-}
-
-@font-face {
-    font-family: NotoSansBoldItalic;
-    src: url(../font/NotoSans-BoldItalic.ttf);
-    font-weight: boldIitalic;
-}
-@font-face {
-    font-family: DancingRegular;
-    src: url(../font/DancingScript-Regular.ttf);
-    font-weight: regular;
-}
-@font-face {
-    font-family: DancingSemiBold;
-    src: url(../font/DancingScript-SemiBold.ttf);
-   
-}
-@font-face {
-    font-family: DancingBold;
-    src: url(../font/DancingScript-Bold.ttf);
-    font-weight: bold;
-}
-@font-face {
-    font-family: DancingMedium;
-    src: url(../font/DancingScript-Medium.ttf);
-    
-} */
 
 /*------------------Top--------------------*/
 
@@ -55,6 +10,7 @@ body {
     background-color: #8A735CCF;
     padding: 1%;
     text-shadow: 2px 2px 2px black;
+    width: 100vw;
 }
 
 .phoneIcon {
@@ -112,6 +68,7 @@ body {
 
 .middleNav, .copyRight {
     background-color: #cabcae5b;
+    
 }
 
 .storeLogoText {
@@ -266,23 +223,24 @@ a:hover {
     
 }
 .card-text{
-    color: #513928;
+    color: #513928cb;
     font-size: 17px;
     font-weight: bold;
     text-align: center;
 }
 .card-businessText{
-    color: #513928;
+    color: #513928cb;
     font-size: 17px;
     font-weight: bold;
     text-align: center;
-    
+   
 }
 
 .direction{
     background-color:#513928;
     color: #EFAD14;
-    font-size: 20px;
+    font-size: 17px;
+    
 }
 
 
@@ -291,6 +249,22 @@ a:hover {
 
 .copyRight {
     color: #513928;
+    font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
-    text-shadow: 5px 5px 5px #51392831;
+    text-shadow: 1px 5px 5px #51392831;
+}
+
+.bottomYelpImg{
+    color: red;
+    display: inline-block;
+   margin: 0 10px 0 0;
+}
+.bottomFBImg{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.bottomIGImg{
+    color:#996E0B;
+    display: inline-block;
+    margin: 0 10px 0 0;
 }
