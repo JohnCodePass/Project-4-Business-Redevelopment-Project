@@ -1,10 +1,22 @@
 body {
-    font-family: NotoSansRegular;
     background-color: #8A735CCF;
 }
 
-
-/*------------------Top--------------------*/
+@media only screen and (max-width: 334px) {
+    #menuArea::after {
+        content: '';
+        background: url("../images/SANDWICH\ SALAD.jpg") no-repeat center center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-size: 900px 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 5217px;
+        z-index: -1;
+        opacity: 50%;
+    }
+}
 
 .topRow {
     background-color: #8A735CCF;
@@ -13,26 +25,40 @@ body {
     width: 100vw;
 }
 
-.phoneIcon {
-    color: rgba(255, 255, 255, 0.836);
-    padding-left: 4%;
+@media only screen and (max-width: 545px) {
+    #secCont {
+        padding: 0px 0px 0px 0px;
+    }
+    .moreCentered {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .carousel-inner {
+        padding: 0px 0px 0px 0px;
+    }
 }
 
 .phoneText {
     color: rgba(255, 255, 255, 0.836);
     font-size: 14px;
     display: inline;
-    padding: 0.4%;
+    padding:
 }
 
-.locationIcon {
-    color: rgba(255, 255, 255, 0.836);
-    padding: 0.3%;
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    overflow: hidden;
 }
 
-.mapText {
-    color: rgba(255, 255, 255, 0.836);
-    display: inline;
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.card {
+    border: none;
 }
 
 .topText {
@@ -43,24 +69,35 @@ body {
     font-size: 15px;
 }
 
-.yelpImg {
-    color: rgba(255, 255, 255, 0.836);
-    padding-left: 20%;
+h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 5px 1px black;
 }
 
-.fbImg {
-    color: rgba(255, 255, 255, 0.836);
-    padding-left: 1%;
+h3 {
+    color: white;
+    text-shadow: 2px 5px 1px black;
+    /* font-size: 22px;  use media for 425px*/
 }
 
-.igImg {
-    color: rgba(255, 255, 255, 0.836);
-    padding-left: 1%;
+p {
+    color: white;
+    text-shadow: 2px 3px 2px black;
 }
 
-.email {
-    color: rgba(255, 255, 255, 0.836);
-    padding-left: 1%;
+/* 425px change font position for the menus */
+
+.userCom {
+    font-size: 30px;
+    color: #513928;
+    text-shadow: none;
+}
+
+.comPlaced {
+    color: #513928;
+    text-shadow: none;
+    font-size: 20px;
 }
 
 /*---------------------------------------------------------------------
@@ -68,203 +105,201 @@ body {
 
 .middleNav, .copyRight {
     background-color: #cabcae5b;
-    
-}
-
-.storeLogoText {
-    color: #513928;
-    font-weight: bolder;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 37px;
-    text-shadow: 5px 5px 5px #51392831;
-}
-
-.navbar-text {
-    color: #513928;
-    padding-right: 10px;
-    display: inline;
-    font-weight: bolder;
-    font-family: 'Noto Sans', sans-serif;
-    text-shadow: 5px 5px 5px #51392831;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-/* mouse over link */
-
-a:hover {
-    color: rgb(223, 166, 62);
-    font-weight: bolder;
-}
-
-/*--------------------------------------------------------------------
+    #leftSide {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #rightSide {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .learnText {
+        color: #513928;
+        text-shadow: none;
+        font-size: 25px;
+    }
+    .goldColor {
+        font-weight: bold;
+        font-family: 'Noto Sans', sans-serif;
+        color: #996E0B;
+        text-shadow: none;
+    }
+    .brownColor {
+        color: #513928;
+        text-shadow: none;
+        font-weight: bold;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    .bgWhite {
+        background-color: white;
+    }
+    #coffeeBean {
+        transform: scaleX(-1) rotate(180deg);
+    }
+    .carousel-item.active, .carousel-item-next, .carousel-item-prev {
+        display: block;
+    }
+    /*--------------------------------------------------------------------
 
 /*---------Image--------*/
-
-.view {
-    background-image: url(../image/HeroImage.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 600px;
-}
-
-.heartLogo {
-    color: white;
-    font-size: 100px;
-}
-
-.subtext-header {
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    font-size: 60px;
-    text-shadow: 4px 7px 4px black;
-    animation-name: slide;
-    animation-duration: 2s;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(-1000px);
-        opacity: 0;
+    .aboutImgs {
+        width: 300px;
+        height: 270px;
+        object-fit: cover;
+        transition: transform .8s ease-in-out;
     }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
+    .aboutImgs:hover {
+        width: 300px;
+        height: 270px;
+        object-fit: cover;
+        transform: rotate(360deg);
     }
-}
-
-.placeOrderBtn {
-    color: white;
-    border-color: white;
-    font-weight: bold;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
-    text-shadow: 2px 5px 2px black;
-    animation-name: slide;
-    animation-duration: 2s;
-    animation-delay: .5s;
-    animation-fill-mode: backwards;
-}
-
-.btn {
-    color: white;
-    font-weight: bold;
-    border: 2px sold #634832;
-    font-size: 25px;
-}
-
-/* .placeOrderBtn:hover {
+    .modalImg {
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+    }
+    .heartLogo {
+        color: white;
+        font-size: 100px;
+    }
+    .subtext-header {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        font-size: 60px;
+        text-shadow: 4px 7px 4px black;
+        animation-name: slide;
+        animation-duration: 2s;
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(-1000px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .modalSide {
+            width: 700px;
+            height: 350px;
+        }
+        .expTop {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .expMid {
+            width: 270px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .btn {
+            color: white;
+            font-weight: bold;
+            border: 2px sold #634832;
+            font-size: 25px;
+        }
+        /* .placeOrderBtn:hover {
     font-weight: bolder;
     background-color: rgb(223, 166, 62);
 } */
-
-.hvr-right {
-    display: inline-block;
-    vertical-align: middle;
-    transition-duration: 0.05s;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgb(223, 166, 62);
-    position: relative;
-    transition-property: color;
-}
-
-.hvr-right:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(223, 167, 62, 0.5);
-    transition-timing-function: ease-out;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition-property: transform;
-    transition-duration: 0.5s;
-}
-
-.hvr-right:hover, .hvr-right:focus, .hvr-right:active {
-    color: white;
-}
-
-.hvr-right:hover:before, .hvr-right:focus:before, .hvr-right:active:before {
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    transform: scaleX(1);
-}
-
-/*------------------------------------------------------------
+        .hvr-right {
+            display: inline-block;
+            vertical-align: middle;
+            transition-duration: 0.05s;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgb(223, 166, 62);
+            position: relative;
+            transition-property: color;
+        }
+        .hvr-right:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(223, 167, 62, 0.5);
+            transition-timing-function: ease-out;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition-property: transform;
+            transition-duration: 0.5s;
+        }
+        .hvr-right:hover, .hvr-right:focus, .hvr-right:active {
+            color: white;
+        }
+        .hvr-right:hover:before, .hvr-right:focus:before, .hvr-right:active:before {
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transform: scaleX(1);
+        }
+        /*------------------------------------------------------------
 /*-----------Bottom Information-------------------------------*/
-
-.bottomInfo{
-    background-color: white;
-    height: 400px;
-    width: 900px;
-    /* font-family: 'Noto Sans', sans-serif;
+        .bottomInfo {
+            background-color: white;
+            height: 400px;
+            width: 900px;
+            /* font-family: 'Noto Sans', sans-serif;
     font-size: 30px;
     color: #af8013;
     text-align: center;
     text-shadow: 0px 1px 0px black; */
-}
-.card-cody{
-    border-style: none;
-    text-align: center;
-  
-}
-.card-title{
-    color: #996E0B;
-    font-weight: bold;
-    text-align: center;
-    
-}
-.card-text{
-    color: #513928cb;
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
-}
-.card-businessText{
-    color: #513928cb;
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
-   
-}
-
-.direction{
-    background-color:#513928;
-    color: #EFAD14;
-    font-size: 17px;
-    
-}
-
-
-
-/*--------copyRight---------*/
-
-.copyRight {
-    color: #513928;
-    font-weight: bold;
-    font-family: 'Noto Sans', sans-serif;
-    text-shadow: 1px 5px 5px #51392831;
-}
-
-.bottomYelpImg{
-    color: red;
-    display: inline-block;
-   margin: 0 10px 0 0;
-}
-.bottomFBImg{
-    display: inline-block;
-    margin: 0 10px 0 0;
-}
-.bottomIGImg{
-    color:#996E0B;
-    display: inline-block;
-    margin: 0 10px 0 0;
-}
+        }
+        .card-body {
+            border-style: none;
+            text-align: center;
+        }
+        .card-title {
+            color: #996E0B;
+            font-weight: bold;
+            text-align: center;
+        }
+        .card-text {
+            color: #513928cb;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .card-businessText {
+            color: #513928cb;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .direction {
+            background-color: #513928;
+            color: #EFAD14;
+            font-size: 17px;
+        }
+        /*--------copyRight---------*/
+        .copyRight {
+            color: #513928;
+            font-weight: bold;
+            font-family: 'Noto Sans', sans-serif;
+            text-shadow: 1px 5px 5px #51392831;
+        }
+        .bottomYelpImg {
+            color: red;
+            display: inline-block;
+            margin: 0 10px 0 0;
+        }
+        .bottomFBImg {
+            display: inline-block;
+            margin: 0 10px 0 0;
+        }
+        .bottomIGImg {
+            color: #996E0B;
+            display: inline-block;
+            margin: 0 10px 0 0;
+            text-shadow: 5px 5px 5px #51392831;
+        }
+        .exp2Bot {
+            width: 410px;
+            height: 217px;
+            object-fit: cover;
+        }
+        .exp1Bot {
+            width: 550px;
+            height: 217px;
+            object-fit: cover;
+        }
