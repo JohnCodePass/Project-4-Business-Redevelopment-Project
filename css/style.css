@@ -1,6 +1,5 @@
 body {
     background-color: #8A735CCF;
-    
 }
 
 @media only screen and (max-width: 6000px) {
@@ -215,6 +214,14 @@ body {
     }
 }
 
+
+.phoneText {
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 14px;
+    display: inline;
+    padding: 
+}
+
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     overflow: hidden;
 }
@@ -229,10 +236,20 @@ body {
     border: none;
 }
 
+
+.topText {
+    display: inline;
+    padding-left: 20%;
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: bold;
+    font-size: 15px;
+}
+
 h2 {
     color: white;
     font-size: 40px;
     text-shadow: 2px 5px 1px black;
+
 }
 
 h3 {
@@ -260,9 +277,14 @@ p {
     font-size: 20px;
 }
 
+
+/*---------------------------------------------------------------------
+/*-----Middle Navigation------*/
+
 #leftSide {
     background-color: rgba(255, 255, 255, 0);
 }
+
 
 #rightSide {
     background-color: rgba(255, 255, 255, 0);
@@ -303,6 +325,11 @@ p {
     display:block;
 }
 
+
+/*--------------------------------------------------------------------
+
+/*---------Image--------*/
+
 .aboutImgs{
     width: 300px; 
     height: 270px; 
@@ -316,11 +343,37 @@ p {
     transform: rotate(360deg);
 }
 
+
 .modalImg{
     width: 600px; 
     height: 600px; 
     object-fit: cover;
 }
+
+
+.heartLogo {
+    color: white;
+    font-size: 100px;
+}
+
+.subtext-header {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 60px;
+    text-shadow: 4px 7px 4px black;
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 
 .modalSide{
     width: 700px; 
@@ -340,6 +393,107 @@ p {
     object-fit: cover;
 }
 
+
+.btn {
+    color: white;
+    font-weight: bold;
+    border: 2px sold #634832;
+    font-size: 25px;
+}
+
+/* .placeOrderBtn:hover {
+    font-weight: bolder;
+    background-color: rgb(223, 166, 62);
+} */
+
+.hvr-right {
+    display: inline-block;
+    vertical-align: middle;
+    transition-duration: 0.05s;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(223, 166, 62);
+    position: relative;
+    transition-property: color;
+}
+
+.hvr-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(223, 167, 62, 0.5);
+    transition-timing-function: ease-out;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.hvr-right:hover, .hvr-right:focus, .hvr-right:active {
+    color: white;
+}
+
+.hvr-right:hover:before, .hvr-right:focus:before, .hvr-right:active:before {
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transform: scaleX(1);
+}
+
+/*------------------------------------------------------------
+/*-----------Bottom Information-------------------------------*/
+
+.bottomInfo{
+    background-color: white;
+    height: 400px;
+    width: 900px;
+    /* font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    color: #af8013;
+    text-align: center;
+    text-shadow: 0px 1px 0px black; */
+}
+.card-cody{
+    border-style: none;
+    text-align: center;
+  
+}
+.card-title{
+    color: #996E0B;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.card-text{
+    color: #513928;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.card-businessText{
+    color: #513928;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.direction{
+    background-color:#513928;
+    color: #EFAD14;
+    font-size: 20px;
+}
+
+
+
+/*--------copyRight---------*/
+
+.copyRight {
+    color: #513928;
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: 5px 5px 5px #51392831;
+=======
 .exp2Bot{
     width: 410px; 
     height: 217px; 
