@@ -1,5 +1,6 @@
 body {
-    background-color: #8A735CCF;   
+    background-color: #8A735CCF;
+    
 }
 
 /* #menuArea{
@@ -14,12 +15,24 @@ body {
 #menuArea::after {
     content:'';
     background: url("../images/SANDWICH\ SALAD.jpg") no-repeat center center;
-    position: absolute ;
-    top:0px;
-    left: 0px;
+
     
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-size: 100% 100%;
+    background-size: cover;
+    object-fit: cover;
+    
+    /* Standard is height of 1646px */
     width:100%;
-    height:100%;
+    height:1646px;
+
+    /*At 1105 px height; increase the img height to 1670px  */
+    /*At 991 px height img goes to tablet, increase height to 3027px  */
+
+    /* In below the 991px picture is pull too much barely visable */
 
     z-index:-1;
     opacity:50%;
@@ -104,6 +117,11 @@ p {
     #secCont {
       padding: 0px 0px 0px 0px;
     }
+
+    .moreCentered{
+        display: flex !important;
+        justify-content: center !important;
+    }
     /* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
         width: 100%;
         padding-right: 15px;
@@ -121,8 +139,8 @@ p {
 
 @media only screen and (max-width: 991px){
     .putCenter{
-        display: flex;
-        justify-content: center;
+        display: flex !important;
+        justify-content: center !important;
     }
 }
 
