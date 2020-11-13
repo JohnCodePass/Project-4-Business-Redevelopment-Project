@@ -23,8 +23,6 @@ body {
         /*At 1105 px height; increase the img height to 1670px  */
         /*At 991 px height img goes to tablet, increase height to 3027px  */
     
-        /* In below the 991px picture is pull too much barely visable */
-    
         z-index:-1;
         opacity:50%;
     }
