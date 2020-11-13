@@ -10,6 +10,8 @@ body {
     background-size: cover;
 
 } */
+
+
 #menuArea::after {
     content:'';
     background: url("../images/SANDWICH\ SALAD.jpg") no-repeat center center;
@@ -21,7 +23,7 @@ body {
     height:100%;
 
     z-index:-1;
-    opacity:50%; /* Here is your opacity */
+    opacity:50%;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -54,6 +56,8 @@ p {
     color: white;
     text-shadow: 2px 3px 2px black;
 }
+
+/* 425px change font position for the menus */
 
 .userCom{
     font-size: 30px;
